@@ -5,81 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Acadêmico | Arthur Prates</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">Arthur Prates</div>
+        <div class="logo"><i class="fa-solid fa-gear text-gradient"></i> Arthur Prates</div>
         <ul class="nav-links">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#fase1">Março & Abril</a></li>
-            <li><a href="#fase2">Maio</a></li>
-            <li><a href="#fase3">Junho</a></li>
+            <li><a href="#sobre"><i class="fa-solid fa-user"></i> Sobre</a></li>
+            <li><a href="#fase1"><i class="fa-solid fa-calendar-days"></i> Março & Abril</a></li>
+            <li><a href="#fase2"><i class="fa-solid fa-calendar-days"></i> Maio</a></li>
+            <li><a href="#fase3"><i class="fa-solid fa-calendar-days"></i> Junho</a></li>
         </ul>
     </nav>
 
     <header id="sobre" class="hero">
         <div class="hero-content">
+            <span class="location-badge"><i class="fa-solid fa-location-dot"></i> UNIPAMPA • Alegrete - RS</span>
             <h1>Arthur Prates de Oliveira Silva</h1>
-            <h2>Portfólio Acadêmico - 2026</h2>
-            <p>Projeto final desenvolvido para consolidar e apresentar todas as atividades, exercícios e projetos realizados durante o semestre. Este ambiente documenta minha evolução técnica em lógica de programação, algoritmos, Python e uso de Inteligências Artificiais.</p>
+            <h2>Engenharia Mecânica <span class="text-muted">| 1º Semestre</span></h2>
+            <p class="bio-text">
+                Bem-vindo ao meu portfólio acadêmico de Lógica de Programação e Algoritmos. Este ambiente documenta minha evolução técnica e prática no desenvolvimento de resoluções computacionais em Python, utilizando Inteligências Artificiais generativas como ferramentas aliadas na engenharia.
+            </p>
+            
+            <div class="skills-container">
+                <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-badge"><i class="fa-solid fa-brain"></i> Prompt Engineering</span>
+                <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                <span class="skill-badge"><i class="fa-solid fa-car-wrench"></i> Modelagem Computacional</span>
+            </div>
         </div>
     </header>
 
     <main class="container">
         
         <section id="fase1" class="month-section">
-            <h2 class="section-title">Fundamentos e Listas <span>Março & Abril</span></h2>
+            <h2 class="section-title"><i class="fa-solid fa-code"></i> Fundamentos e Listas <span>Março & Abril</span></h2>
             <div class="grid-cards">
                 
                 <article class="card">
-                    <h3>Lista de 15 exercícios: escolher e resolver</h3>
-                    <div class="card-content">
-                        <p><strong>Objetivo:</strong> Resolver no mínimo 15 exercícios a partir das apostilas usando ferramentas de IA para algoritmos básicos focados em engenharia.</p>
-                        <p><strong>Tecnologias:</strong> Python, ChatGPT/Gemini/Claude.</p>
-                        <p><strong>Resultado:</strong> Resolução completa em PDF enviada no Classroom.</p>
+                    <div>
+                        <h3>Lista de 15 exercícios: escolher e resolver</h3>
+                        <div class="card-content">
+                            <p><strong><i class="fa-solid fa-bullseye"></i> Objetivo:</strong> Resolver no mínimo 15 exercícios das apostilas usando ferramentas de IA para algoritmos básicos focados em problemas de exatas.</p>
+                            <p><strong><i class="fa-solid fa-laptop-code"></i> Tecnologias:</strong> Python, ChatGPT, Gemini, Claude.</p>
+                            <p><strong><i class="fa-solid fa-square-poll-horizontal"></i> Resultado:</strong> Resolução completa em PDF estruturada metodologicamente.</p>
+                        </div>
                     </div>
                     <div class="card-actions">
-                        <a href="https://drive.google.com/file/d/1v0BMp-mtigr3wwhdZLxHMPB-yEw804Xq/view?usp=classroom_web&authuser=0" target="_blank" class="btn">Lista 1</a>
-                        <a href="https://drive.google.com/file/d/1VVYAWhKAv2TqeG9-wQg2ee9rws4jPg1Y/view?usp=classroom_web&authuser=0" target="_blank" class="btn">Lista 2</a>
+                        <a href="https://drive.google.com/file/d/1v0BMp-mtigr3wwhdZLxHMPB-yEw804Xq/view?usp=classroom_web&authuser=0" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Lista 1</a>
+                        <a href="https://drive.google.com/file/d/1VVYAWhKAv2TqeG9-wQg2ee9rws4jPg1Y/view?usp=classroom_web&authuser=0" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Lista 2</a>
                     </div>
                 </article>
 
                 <article class="card">
-                    <h3>Lista de 10 Exercícios by Claude.ai</h3>
-                    <div class="card-content">
-                        <p><strong>Objetivo:</strong> Resolver 10 exercícios da apostila de Introdução a Algoritmos gerada em aula pelo Claude.ai.</p>
-                        <p><strong>Tecnologias:</strong> Python, Claude.ai.</p>
-                        <p><strong>Resultado:</strong> Documento com resoluções em Python.</p>
+                    <div>
+                        <h3>Lista de 10 Exercícios by Claude.ai</h3>
+                        <div class="card-content">
+                            <p><strong><i class="fa-solid fa-bullseye"></i> Objetivo:</strong> Resolver 10 exercícios complexos da apostila de Introdução a Algoritmos gerada em aula de forma assistida.</p>
+                            <p><strong><i class="fa-solid fa-laptop-code"></i> Tecnologias:</strong> Python, Claude.ai.</p>
+                            <p><strong><i class="fa-solid fa-square-poll-horizontal"></i> Resultado:</strong> Documento técnico contendo lógica condicional e loops.</p>
+                        </div>
                     </div>
                     <div class="card-actions">
-                        <a href="https://drive.google.com/file/d/1w_VuOz-famYWee-5RwYCxiNYnga73TZc/view?usp=classroom_web&authuser=0" target="_blank" class="btn">Ver Documento</a>
+                        <a href="https://drive.google.com/file/d/1w_VuOz-famYWee-5RwYCxiNYnga73TZc/view?usp=classroom_web&authuser=0" target="_blank" class="btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Documento</a>
                     </div>
                 </article>
 
                 <article class="card">
-                    <h3>Geração e Avaliação com LLMs</h3>
-                    <div class="card-content">
-                        <p><strong>Objetivo:</strong> Utilizar três LLMs diferentes para gerar e comparar exercícios de algoritmos aplicados às áreas de Engenharia.</p>
-                        <p><strong>Tecnologias:</strong> Engenharia de Prompts, Análise Comparativa.</p>
-                        <p><strong>Resultado:</strong> Relatório com análise qualitativa dos prompts e resultados.</p>
+                    <div>
+                        <h3>Geração e Avaliação com LLMs</h3>
+                        <div class="card-content">
+                            <p><strong><i class="fa-solid fa-bullseye"></i> Objetivo:</strong> Utilizar três Grandes Modelos de Linguagem (LLMs) para gerar e comparar exercícios de algoritmos aplicados.</p>
+                            <p><strong><i class="fa-solid fa-laptop-code"></i> Tecnologias:</strong> Engenharia de Prompts, Análise Comparativa de IAs.</p>
+                            <p><strong><i class="fa-solid fa-square-poll-horizontal"></i> Resultado:</strong> Relatório com análise de clareza, corretude e performance dos códigos gerados.</p>
+                        </div>
                     </div>
                     <div class="card-actions">
-                        <a href="https://docs.google.com/document/d/1Y2yeZi6yv5emmcSnnklsE2FwLhSV0Yw7C4fQwZ_kQdU/edit?usp=classroom_web&authuser=0" target="_blank" class="btn">Relatório de Avaliação</a>
+                        <a href="https://docs.google.com/document/d/1Y2yeZi6yv5emmcSnnklsE2FwLhSV0Yw7C4fQwZ_kQdU/edit?usp=classroom_web&authuser=0" target="_blank" class="btn"><i class="fa-solid fa-file-lines"></i> Relatório de Avaliação</a>
                     </div>
                 </article>
                 
                 <article class="card">
-                    <h3>Exercícios em Papel e Python (Vetores)</h3>
-                    <div class="card-content">
-                        <p><strong>Objetivo:</strong> Resolver exercícios no papel com teste de mesa e depois implementar as resoluções de vetores/arrays na máquina executando o código Python.</p>
-                        <p><strong>Tecnologias:</strong> Lógica Estruturada, Python.</p>
-                        <p><strong>Resultado:</strong> Relatórios digitalizados da escrita à mão e prints de execução.</p>
+                    <div>
+                        <h3>Exercícios em Papel e Python (Vetores)</h3>
+                        <div class="card-content">
+                            <p><strong><i class="fa-solid fa-bullseye"></i> Objetivo:</strong> Resolver exercícios analiticamente via teste de mesa tradicional e validar os resultados através de matrizes e vetores em Python.</p>
+                            <p><strong><i class="fa-solid fa-laptop-code"></i> Tecnologias:</strong> Lógica Estruturada, Python, Arrays.</p>
+                            <p><strong><i class="fa-solid fa-square-poll-horizontal"></i> Resultado:</strong> Digitalização das resoluções manuscritas e scripts funcionais equivalentes.</p>
+                        </div>
                     </div>
                     <div class="card-actions">
-                        <a href="https://drive.google.com/file/d/1-XjaRAyqx0hPKvtFpDqZUtQDnm3KdVsL/view?usp=classroom_web&authuser=0" target="_blank" class="btn">Resolução no Papel</a>
-                        <a href="https://drive.google.com/file/d/1p90CSZczTuRzPNMIiEmwc56nUbMH3ieN/view?usp=classroom_web&authuser=0" target="_blank" class="btn">Vetores Python</a>
+                        <a href="https://drive.google.com/file/d/1-XjaRAyqx0hPKvtFpDqZUtQDnm3KdVsL/view?usp=classroom_web&authuser=0" target="_blank" class="btn"><i class="fa-solid fa-pen-fancy"></i> Resolução Papel</a>
+                        <a href="https://drive.google.com/file/d/1p90CSZczTuRzPNMIiEmwc56nUbMH3ieN/view?usp=classroom_web&authuser=0" target="_blank" class="btn"><i class="fa-brands fa-python"></i> Vetores Python</a>
                     </div>
                 </article>
 
@@ -87,27 +106,31 @@
         </section>
 
         <section id="fase2" class="month-section">
-            <h2 class="section-title">Problemas de Engenharia <span>Maio</span></h2>
+            <h2 class="section-title"><i class="fa-solid fa-gears"></i> Problemas de Engenharia <span>Maio</span></h2>
             <div class="grid-cards">
                 
                 <article class="card">
-                    <h3>Formulação de Problemas com LLMs</h3>
-                    <div class="card-content">
-                        <p><strong>Objetivo:</strong> Explorar o uso de LLMs para formular problemas computacionais realistas focados nas Engenharias.</p>
-                        <p><strong>Tecnologias:</strong> ChatGPT, Lógica Algorítmica.</p>
-                        <p><strong>Resultado:</strong> Dois problemas definidos e resolvidos manualmente.</p>
+                    <div>
+                        <h3>Formulação de Problemas com LLMs</h3>
+                        <div class="card-content">
+                            <p><strong><i class="fa-solid fa-bullseye"></i> Objetivo:</strong> Explorar o potencial das LLMs para idealizar cenários de falhas e cálculos práticos comuns na Engenharia.</p>
+                            <p><strong><i class="fa-solid fa-laptop-code"></i> Tecnologias:</strong> ChatGPT, Lógica Algorítmica.</p>
+                            <p><strong><i class="fa-solid fa-square-poll-horizontal"></i> Resultado:</strong> Formulação estruturada de enunciados e soluções de forma assistida.</p>
+                        </div>
                     </div>
                     <div class="card-actions">
-                        <a href="https://drive.google.com/file/d/1T6BoQGrkju0Bu6Rx74E1W7q3HkN76QwE/view?usp=classroom_web&authuser=0" target="_blank" class="btn">Ver Resolução</a>
+                        <a href="https://drive.google.com/file/d/1T6BoQGrkju0Bu6Rx74E1W7q3HkN76QwE/view?usp=classroom_web&authuser=0" target="_blank" class="btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Resolução</a>
                     </div>
                 </article>
 
                 <article class="card">
-                    <h3>Resolução de Problemas Propostos</h3>
-                    <div class="card-content">
-                        <p><strong>Objetivo:</strong> Escolher, resolver e entregar problemas de engenharia focando em vetores de tamanho variável e comparar saídas de 3 LLMs distintas.</p>
-                        <p><strong>Tecnologias:</strong> Python, Visualização de Gráficos e Tabelas.</p>
-                        <p><strong>Resultado:</strong> Códigos, simulações visuais e análise comparativa.</p>
+                    <div>
+                        <h3>Resolução de Problemas Propostos</h3>
+                        <div class="card-content">
+                            <p><strong><i class="fa-solid fa-bullseye"></i> Objetivo:</strong> Construir algoritmos baseados em dados de entrada dinâmicos (vetores dinâmicos) e cruzar métricas geradas por 3 IAs distintas.</p>
+                            <p><strong><i class="fa-solid fa-laptop-code"></i> Tecnologias:</strong> Python, Gráficos, Engenharia de Prompts.</p>
+                            <p><strong><i class="fa-solid fa-square-poll-horizontal"></i> Resultado:</strong> Códigos consolidados com validação visual e análise crítica.</p>
+                        </div>
                     </div>
                     <div class="card-actions">
                         <a href="https://drive.google.com/file/d/1z2OODKg5dEBnwzRtUz6vOOu36OV5dOND/view?usp=classroom_web&authuser=0" target="_blank" class="btn">Análise 1</a>
@@ -115,58 +138,96 @@
                         <a href="https://docs.google.com/document/d/1UdkZI0TVJp6qR8ClFvTvVbOFFCkb5aZaqXjymuK7rw0/edit?usp=classroom_web&authuser=0" target="_blank" class="btn">Problema Livre</a>
                     </div>
                 </article>
-                
-                <article class="card">
-                    <h3>Evolução Técnica e Entrevistas</h3>
-                    <div class="card-content">
-                        <p><strong>Objetivo:</strong> Realizar um relato reflexivo sincero sobre as entrevistas e documentar a evolução técnica da solução desenvolvida.</p>
-                        <p><strong>Tecnologias:</strong> Redação Técnica, Autoavaliação.</p>
-                        <p><strong>Resultado:</strong> Relatórios detalhados atestando a maturidade na disciplina.</p>
+
+                <article class="card highlight-card">
+                    <div>
+                        <div class="featured-tag"><i class="fa-solid fa-star"></i> PROJETO DESTAQUE DO SEMESTRE</div>
+                        <h3>Evolução Técnica: Sistema de Modificação de Motores</h3>
+                        <div class="card-content">
+                            <p><strong><i class="fa-solid fa-bullseye"></i> Objetivo:</strong> Unir conceitos de termodinâmica e mecânica veicular com programação, construindo um modelo em Python para simulação de modificações mecânicas (Tuning de Motores) e cálculo de ganho estimado de potência (CV) e torque.</p>
+                            <p><strong><i class="fa-solid fa-laptop-code"></i> Tecnologias:</strong> Python (Estruturas Condicionais, Loops e Funções), Claude.ai.</p>
+                            <p><strong><i class="fa-solid fa-square-poll-horizontal"></i> Resultado:</strong> Um script interativo que simula upgrades de Estágio (Stage 1, Stage 2) alterando parâmetros de pressão de turbo e injeção.</p>
+                        </div>
                     </div>
                     <div class="card-actions">
-                        <a href="https://docs.google.com/document/d/1G94qtjVk62WJWeMl5HjeUD_8NeWSNJJC8kP-Y_Df7hI/edit?usp=classroom_web&authuser=0" target="_blank" class="btn">Evolução Técnica</a>
-                        <a href="https://docs.google.com/document/d/14GPkHv87gbftpOUJXLFOsfEuhTOUuwFs_TM9ibk84XI/edit?usp=classroom_web&authuser=0" target="_blank" class="btn">Relato Entrevistas</a>
+                        <a href="https://docs.google.com/document/d/1G94qtjVk62WJWeMl5HjeUD_8NeWSNJJC8kP-Y_Df7hI/edit?usp=classroom_web&authuser=0" target="_blank" class="btn btn-primary"><i class="fa-solid fa-file-word"></i> Evolução Técnica</a>
+                        <a href="https://docs.google.com/document/d/14GPkHv87gbftpOUJXLFOsfEuhTOUuwFs_TM9ibk84XI/edit?usp=classroom_web&authuser=0" target="_blank" class="btn"><i class="fa-solid fa-comments"></i> Relato Entrevistas</a>
                     </div>
                 </article>
 
+            </div>
+
+            <div class="code-showcase">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title"><i class="fa-brands fa-python"></i> simulador_tuning_unipampa.py</span>
+                </div>
+                <pre><code><span class="keyword">class</span> <span class="class-name">Motor</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="variable">self</span>, modelo, cv_original, torque):
+        <span class="variable">self</span>.modelo = modelo
+        <span class="variable">self</span>.cv = cv_original
+        <span class="variable">self</span>.torque = torque
+
+    <span class="keyword">def</span> <span class="function">simular_upgrade</span>(<span class="variable">self</span>, stage):
+        <span class="keyword">if</span> stage == <span class="number">1</span>:
+            <span class="variable">self</span>.cv *= <span class="number">1.15</span>  <span class="comment"># +15% de eficiência volumétrica via ganho eletrônico</span>
+            <span class="variable">self</span>.torque *= <span class="number">1.12</span>
+        <span class="keyword">elif</span> stage == <span class="number">2</span>:
+            <span class="variable">self</span>.cv *= <span class="number">1.35</span>  <span class="comment"># +35% de potência com alteração física de exaustão</span>
+            <span class="variable">self</span>.torque *= <span class="number">1.28</span>
+        <span class="keyword">return</span> <span class="variable">self</span>.cv, <span class="variable">self</span>.torque
+
+<span class="comment"># Exemplo de execução simulando conceitos físicos aplicados em código</span>
+motor_carro = Motor(<span class="string">"2.0 Turbo"</span>, cv_original=<span class="number">200</span>, torque=<span class="number">350</span>)
+novo_cv, novo_torque = motor_carro.simular_upgrade(stage=<span class="number">2</span>)
+print(<span class="string">f"Potência final estimada: {novo_cv:.1f} CV"</span>)</code></pre>
             </div>
         </section>
 
         <section id="fase3" class="month-section">
-            <h2 class="section-title">IA Aplicada e Deploy Final <span>Junho</span></h2>
+            <h2 class="section-title"><i class="fa-solid fa-cloud-arrow-up"></i> IA Aplicada e Deploy Final <span>Junho</span></h2>
             <div class="grid-cards">
                 
                 <article class="card">
-                    <h3>Portal Alegrete.org</h3>
-                    <div class="card-content">
-                        <p><strong>Objetivo:</strong> Avaliar criticamente o portal da cidade e desenvolver soluções assistidas por IA (scripts, busca de imagens, atualização de eventos).</p>
-                        <p><strong>Tecnologias:</strong> Python, IA Aplicada, HTML.</p>
-                        <p><strong>Resultado:</strong> Diagnóstico de usabilidade e scripts gerados para melhoria funcional do portal.</p>
+                    <div>
+                        <h3>Portal Alegrete.org</h3>
+                        <div class="card-content">
+                            <p><strong><i class="fa-solid fa-bullseye"></i> Objetivo:</strong> Analisar a usabilidade do portal público de Alegrete e projetar refinamentos e scripts automatizados com suporte de inteligência artificial.</p>
+                            <p><strong><i class="fa-solid fa-laptop-code"></i> Tecnologias:</strong> Usabilidade Web, Automação em Python, HTML estrutural.</p>
+                            <p><strong><i class="fa-solid fa-square-poll-horizontal"></i> Resultado:</strong> Mapeamento de problemas de interface e proposta lógica de otimização de banco de dados e eventos locais.</p>
+                        </div>
                     </div>
                     <div class="card-actions">
-                        <a href="https://drive.google.com/file/d/1Zf7_w8DqcNZnyTWu0JMs_5bCYWvq54PT/view?usp=classroom_web&authuser=0" target="_blank" class="btn">Dev Assistido por IA</a>
+                        <a href="https://drive.google.com/file/d/1Zf7_w8DqcNZnyTWu0JMs_5bCYWvq54PT/view?usp=classroom_web&authuser=0" target="_blank" class="btn"><i class="fa-solid fa-robot"></i> Dev Assistido por IA</a>
                     </div>
                 </article>
 
                 <article class="card highlight-card">
-                    <h3>[ENTREGA FINAL] Portfólio GitHub</h3>
-                    <div class="card-content">
-                        <p><strong>Objetivo:</strong> Consolidar todas as entregas do semestre (março a junho) em um único ambiente web navegável e responsivo.</p>
-                        <p><strong>Tecnologias:</strong> HTML5, CSS3, GitHub Pages, Git.</p>
-                        <p><strong>Resultado:</strong> Site publicado atendendo rigorosamente aos critérios de avaliação estipulados.</p>
+                    <div>
+                        <div class="featured-tag"><i class="fa-solid fa-globe"></i> AMBIENTE DE ENTREGA</div>
+                        <h3>[ENTREGA FINAL] Portfólio GitHub Pages</h3>
+                        <div class="card-content">
+                            <p><strong><i class="fa-solid fa-bullseye"></i> Objetivo:</strong> Centralizar e disponibilizar publicamente toda a produção intelectual e prática do semestre em um ecossistema estático unificado e responsivo.</p>
+                            <p><strong><i class="fa-solid fa-laptop-code"></i> Tecnologias:</strong> HTML5, CSS3, GitHub Pages, Git Hub Workflow.</p>
+                            <p><strong><i class="fa-solid fa-square-poll-horizontal"></i> Resultado:</strong> Interface otimizada com arquitetura fluida, atendendo estritamente a todos os quesitos acadêmicos estabelecidos.</p>
+                        </div>
                     </div>
                     <div class="card-actions">
-                        <a href="#" class="btn btn-primary">Você está navegando nele</a>
+                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-circle-check"></i> Você está navegando nele</a>
                     </div>
                 </article>
 
             </div>
         </section>
-
     </main>
 
     <footer>
-        <p>Desenvolvido por <strong>Arthur Prates de Oliveira Silva</strong> | Projeto Acadêmico 2026</p>
+        <p>Desenvolvido por <strong>Arthur Prates de Oliveira Silva</strong></p>
+        <p class="footer-sub">Componente Curricular de Lógica de Programação | Engenharia Mecânica | <strong>UNIPAMPA</strong></p>
     </footer>
 
 </body>
