@@ -1,103 +1,249 @@
-body{
-
-font-family:Arial,sans-serif;
-
-margin:0;
-
-padding:0;
-
-background:#f4f4f4;
-
-line-height:1.6;
-
+/* =========================================
+   VARIÁVEIS DE COR E TEMA (DARK MODE MODERNO)
+   ========================================= */
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent-color: #3b82f6;
+    --accent-hover: #2563eb;
+    --border-color: #334155;
 }
 
-
-
-header{
-
-background:#1f1f1f;
-
-color:white;
-
-padding:30px;
-
-text-align:center;
-
+/* =========================================
+   RESET GERAL
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
-
-
-nav{
-
-margin-top:20px;
-
+html {
+    scroll-behavior: smooth;
 }
 
-
-
-nav a{
-
-color:white;
-
-margin:20px;
-
-text-decoration:none;
-
-font-weight:bold;
-
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
 }
 
-
-
-section{
-
-padding:40px;
-
-max-width:900px;
-
-margin:auto;
-
+/* =========================================
+   NAVEGAÇÃO (MENU FIXO)
+   ========================================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
 }
 
-
-
-.card{
-
-background:white;
-
-padding:20px;
-
-margin-bottom:20px;
-
-border-radius:12px;
-
-box-shadow:0 0 10px rgba(0,0,0,0.10);
-
+.logo {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--accent-color);
 }
 
-
-
-h2{
-
-border-bottom:2px solid #ddd;
-
-padding-bottom:10px;
-
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
 }
 
+.nav-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
 
+.nav-links a:hover {
+    color: var(--accent-color);
+}
 
-footer{
+/* =========================================
+   CABEÇALHO / HERO
+   ========================================= */
+.hero {
+    margin-top: 80px;
+    padding: 6rem 5%;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(30,41,59,1) 0%, rgba(15,23,42,1) 100%);
+    border-bottom: 1px solid var(--border-color);
+}
 
-background:#222;
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
 
-color:white;
+.hero h2 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
 
-text-align:center;
+.hero p {
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
 
-padding:20px;
+/* =========================================
+   CONTAINER E SEÇÕES (MESES)
+   ========================================= */
+.container {
+    padding: 2rem 5% 5rem 5%;
+}
 
-margin-top:40px;
+.month-section {
+    padding-top: 5rem;
+    margin-bottom: 3rem;
+}
 
+.section-title {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.section-title span {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+/* =========================================
+   CARDS DE ATIVIDADES (GRID)
+   ========================================= */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: var(--accent-color);
+}
+
+.highlight-card {
+    border: 2px solid var(--accent-color);
+    background: linear-gradient(135deg, var(--card-bg) 0%, #1e293b 100%);
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.8rem;
+}
+
+.card-content strong {
+    color: var(--accent-color);
+}
+
+.card-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+/* =========================================
+   BOTÕES
+   ========================================= */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: var(--text-primary);
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--border-color);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+
+/* =========================================
+   RODAPÉ
+   ========================================= */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   RESPONSIVIDADE (MOBILE)
+   ========================================= */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Oculta menu no mobile para simplificar o layout */
+    }
+    
+    .hero {
+        padding: 4rem 5%;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
 }
